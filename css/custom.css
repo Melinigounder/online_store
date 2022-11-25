@@ -130,6 +130,7 @@ ul {
 }
 .add-to-cart {
     margin:10px 0;
+    font-size: 15px;
 }
 .card {
     text-align: center;
@@ -161,6 +162,7 @@ ul {
     margin-top: 40px;
     border-top:1px solid #aaa;;
     padding-top: 40px;
+    
 }
 .footer .menu a{
 display: block;
