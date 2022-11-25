@@ -1,0 +1,233 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap');
+
+/* variables */
+:root{
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+.logo {
+    width: 360px; 
+  }
+
+.primary-color{
+    color: var(--primary-color);
+    
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+    color: var(--text-color);
+}
+.font-roboto{
+    font-family: var(--roboto);
+}
+.lightblue{
+    color: lightblue;
+}
+
+/* header */
+header{
+    background-color: white;
+    font-family: var(--roboto);
+}
+header .site-title{
+    font-family: var(--gugi);
+}
+.container .dropdown-toggle, 
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* navigation menue */
+.navbar-nav{
+    padding:  0.09em 0em;
+    margin-left: 518px;
+    
+}
+.navbar-nav .nav-link{
+    font-size: 2.1em;
+    color: black!important;
+    letter-spacing: 2px;
+    font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 18px;
+}
+.nav-link .nav-item .nav-link{
+    padding: 0 1.3em;
+    
+}
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+}
+
+
+/* slider One */
+.site-slider{
+    position: relative;
+   
+}
+.position-top{
+    position: absolute;
+    top: 45%;
+   
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next
+{
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    color: #fff;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 1;
+}
+
+.right-0{
+    right: 0;
+}
+
+/* slick dots */
+
+.slick-dots li{
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: block;
+    width: 5rem;
+    height: 0.5rem ;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    text-indent: -9999px;
+    border-radius: 100%;
+}
+
+.slick-dots li .slick-active button{
+    transform: scale(2.5);
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0, 205);
+}
+
+/* second sliders */
+.site-slider-two{
+    position: relative;
+    height: 30%;
+}
+.site-slider-two .product{
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+.site-slider-two .product img{
+    width: 90%;
+    margin: auto;
+}
+.site-btn .btn-span{
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid var(--border);
+    background-color: #fff;
+    color: var(--light-gray);
+}
+.slider-two .slick-track .product:hover span{
+    background-color: var(--primary-color);
+}
+
+
+
+  .header {
+      background-color: #F5F5F5;
+      color: #36A0FF;
+      height: 70px;
+      font-size: 27px;
+      padding: 10px;
+  }
+  
+
+  /* footer background */
+  .mybottmfooter{
+      background-color: #e9ecef;
+  }
+  .mybottmfooter a{
+      color: #000;
+  }
+
+  .row{
+      margin-right: 0 important!;
+      padding-right: 0 important!;
+  }
+
+  /********** CONTACT DETAILS **********/
+
+.contacts-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contacts-list a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.568);
+  }
+  
+  .contact-icon {
+    font-size: 32px;
+    color: rgba(51, 51, 51, 0.705);
+    padding-bottom: 22px;
+  }
+/********** CONTACT FORM **********/
+
+.contact-section {
+    background-color: #e3e3e3;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .contact-input {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .btn-contact-form {
+    margin-top: 22px;
+    text-transform: uppercase;
+    padding: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  .heading-secondary-contact {
+    margin-bottom: 32px;
+  }
+  
+  .contact-map {
+    width: 600px;
+    height: 465px;
+  }
+  

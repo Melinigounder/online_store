@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Store</title>
+    <!-- Bootsrap CDN -->
+    <link href="./bootstrap-4.3.1-dist/css/bootstrap.css" media="all" type="text/css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+
+    <!-- Slick Cdn -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/skeleton.css">
+     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="col-md-4 col-12 img-center">
+                    
+            <img
+        class="logo"
+        src="./images/melos-logo-no-background.png"
+        alt="melo's furniture logo"
+    />
+        </div>
+               
+                    
+        <!-- navigation -->
+        <div class="container-fluid p-0 ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lookbook.html">Lookbook</a>
+                        </li>
+
+                    </ul>
+                </div>
+    </header>
+    <!-- End of header -->
+          <!-- Hero -->
+             <!--  .jumbotron.text-center>h2.card-title+p.my-4  to get the bottom content-->
+             <div class="jumbotron text-center">
+                <h2 class="card-title">SHOP</h2>
+                
+            </div>
+            <!-- End hero -->
+  
+
+             <!-- Main -->
+             <div class="container">
+                 <div class="row">
+                     <div class="col">
+                         <div class="card" style="width: 20rem;">
+                             <img class="card-img-top" src="images/table-5-sm.jpg"
+                                 alt="Card image cap">
+                             <div class="card-block">
+                                 <h4 class="card-title">Coffee Table</h4>
+                                 <p class="card-text">Price: R1895</p>
+                                 <a href="#" data-name="CoffeeTable" data-price="1895" class="add-to-cart btn btn-primary">Add
+                                     to cart</a>
+                                   
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="card" style="width: 20rem;">
+                             <img class="card-img-top"
+                                 src="images/table-6-md.jpg"
+                                 alt="Card image cap">
+                             <div class="card-block">
+                                 <h4 class="card-title">Fancy Table</h4>
+                                 <p class="card-text">Price: R8500</p>
+                                 <a href="#" data-name="FancyTable" data-price="8500"
+                                     class="add-to-cart btn btn-primary">Add to cart</a>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="card" style="width: 20rem;">
+                             <img class="card-img-top"
+                                 src="images/table-7-sm.jpg"
+                                 alt="Card image cap">
+                             <div class="card-block">
+                                 <h4 class="card-title">Block Table</h4>
+                                 <p class="card-text">Price: R5000</p>
+                                 <a href="#" data-name="BlockTable" data-price="5000" class="add-to-cart btn btn-primary">Add to
+                                     cart</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+             <!-- Modal -->
+             <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                 <div class="modal-dialog modal-lg" role="document">
+                     <div class="modal-content">
+                         <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                             </button>
+                         </div>
+                         <div class="modal-body">
+                             <table class="show-cart table">
+
+                             </table>
+                             <div>Total price: R<span class="total-cart"></span></div>
+                         </div>
+                         <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             
+                         </div>
+                     </div>
+                 </div>
+             </div>
+  <!-- Nav -->
+             <nav class="navbar navbar-inverse bg-inverse fixed-bottom bg-faded">
+                 <div class="row">
+                     <div class="col">
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart
+                             (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear
+                             Cart</button></div>
+                 </div>
+             </nav>
+      <!-- Footer -->
+     <footer class="page-footer font-small stylish-color-dark pt-4 mybottmfooter">
+
+         <!-- Footer Links -->
+         <div class="container text-center text-md-left">
+
+             <!-- Grid row -->
+             <div class="row">
+
+                 <!-- Grid column -->
+                 <div class="col-md-4 mx-auto">
+
+                     <!-- Content -->
+                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">MELO'S</h5>
+                     <p>Atterbury Road And, Lois Ave, Menlyn, Pretoria, 0063</p>
+                     <p> (+27) 61 482 2390</p>
+                     <p>melini.gounder@gmail.com</p>
+
+                 </div>
+                 <!-- Grid column -->
+
+                 <hr class="clearfix w-100 d-md-none">
+
+                 <!-- Grid column -->
+                 <div class="col-md-2 mx-auto">
+
+                     <!-- Links -->
+                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LINKS</h5>
+
+                     <ul class="list-unstyled">
+                         <li>
+                             <a href="shop.html">Products</a>
+                         </li>
+                         <li>
+                             <a href="lookbook.html">Gallery</a>
+                         </li>
+                         <li>
+                             <a href="about.html">About Us</a>
+                         </li>
+                         <li>
+                             <a href="contact.html">Contact Us</a>
+                         </li>
+                     </ul>
+
+                 </div>
+                 <!-- Grid column -->
+
+                 <hr class="clearfix w-100 d-md-none">
+
+                 <!-- Grid column -->
+                 <div class="col-md-2 mx-auto">
+
+                     <!-- Links -->
+                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">SHOP</h5>
+
+                     <ul class="list-unstyled">
+                        <li>
+                            <a href="shop.html">New Items</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Featured</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Support</a>
+                        </li>
+                     </ul>
+
+                 </div>
+                 <!-- Grid column -->
+
+             </div>
+             <!-- Grid row -->
+
+         </div>
+         <!-- Footer Links -->
+
+        <!-- Social buttons -->
+<ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+        <a href="https://www.facebook.com/melini.gounder.37" target="_blank" class="btn-floating btn-fb mx-1">
+            <i class="fab fa-facebook-f"> </i>
+        </a>
+    </li>
+    
+    <li class="list-inline-item">
+        <a  href="https://www.linkedin.com/in/melini-gounder-87b17b3a/" target="_blank"class="btn-floating btn-li mx-1">
+            <i class="fab fa-linkedin-in"> </i>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://www.codespace.co.za/programs" target="_blank"   class="btn-floating btn-dribbble mx-1">
+            <i class="fab fa-dribbble"> </i>
+        </a>
+    </li>
+</ul>
+<!-- Social buttons -->
+
+         <!-- Copyright -->
+        
+         <div class="footer-copyright text-center py-3" style="background: #e9ecef;">:
+             
+                   
+             <img
+             class="logo"
+             src="./images/melos-logo-no-background.png"
+             alt="melo's furniture logo"
+         />
+        <p>© 2022 Copyright</p>
+
+         </div>
+         <!-- Copyright -->
+         
+     </footer>
+      <!-- Footer -->
+          <!-- bootsrap Script CDN -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+              integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+              crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+              integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+              crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+              crossorigin="anonymous"></script>
+          <!-- slick script -->
+          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <!-- main js -->
+          <script src="./js/main.js"></script>
+          <script src="./js/shop.js"></script>
+</body>

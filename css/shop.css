@@ -1,0 +1,73 @@
+.show-cart li {
+    display: flex;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+.logo {
+    width: 360px; 
+  }
+  /********** CONTACT DETAILS **********/
+
+.contacts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contacts-list a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.568);
+}
+
+.contact-icon {
+  font-size: 32px;
+  color: rgba(51, 51, 51, 0.705);
+  padding-bottom: 22px;
+}
+
+  /********** CONTACT FORM **********/
+
+.contact-section {
+    background-color: #e3e3e3;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .contact-input {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .btn-contact-form {
+    margin-top: 22px;
+    text-transform: uppercase;
+    padding: 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  .heading-secondary-contact {
+    margin-bottom: 32px;
+  }
+  
+  .contact-map {
+    width: 600px;
+    height: 465px;
+  }
+  
